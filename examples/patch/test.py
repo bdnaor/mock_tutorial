@@ -1,10 +1,10 @@
 from mock import patch
-from examples.example_patch.example import get_next_person
+from examples.patch.example import get_next_person
 from unittest import TestCase
 
 
 class TestGetNextPerson(TestCase):
-    @patch('examples.example_patch.example.get_random_user')
+    @patch('examples.patch.example.get_random_user')
     def test_get_next_person(self, mock_get_random_person):
         # arrange
         user = {'people_seen': []}

@@ -1,5 +1,5 @@
 from mock import patch
-from examples.example_patch_object.example import Application
+from examples.patch_object.example import Application
 from unittest import TestCase
 
 
